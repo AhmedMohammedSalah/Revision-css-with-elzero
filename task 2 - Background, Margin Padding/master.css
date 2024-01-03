@@ -62,5 +62,10 @@
 }
 .task4 .assign-4-shape-3{
     background-repeat: repeat-x;
+    background-size: 100% 85%;
     background-position: bottom;
+}
+.task4 .assign-4-shape-4 {
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
