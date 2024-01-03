@@ -1,0 +1,41 @@
+.task1{
+    background-color: bisque;
+}
+.task1 div{
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    background-color: gray;
+    outline: 5px black solid;
+    margin: 5px;
+}
+.task1 .shape1 {
+    border: 5px solid red;
+}
+.task1 .shape2 {
+    border: 5px solid;
+    border-color: blue green;
+}
+.task1 .shape3 {
+    border: 5px dotted;
+    border-color: red green blue yellow;
+}
+.task2 {
+    background-color: aquamarine;
+}
+.task2 div {
+    width: 400px;
+    padding: 8px;
+    margin: 5px;
+    outline: 8px solid rgb(214, 214, 214);
+    background-color: rgb(214, 214, 214);
+}
+.task2 .element-1 {
+    border-left: 6px solid rgb(238, 76, 103);
+}
+.task2 .element-2 {
+    visibility: hidden;
+}
+.task2 .element-3 {
+    border-left: 6px solid green;
+}
