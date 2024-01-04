@@ -1,0 +1,60 @@
+.task1 {
+    font-size: 80px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 0 #ff0000,
+        4px 4px 0 #00bbff,
+        6px 6px 0 #8646c5;
+}
+
+
+
+/* task 2  */
+.task2 {
+    background-color: #EFEFEF;
+}
+.task2 p{
+    font-size: 40px;
+    text-align: center;
+}
+.task2 .one {
+    text-transform: uppercase;
+
+}
+.task2 .two {
+    text-transform: capitalize;
+
+}
+.task3 {
+    background-color: #eee;
+
+}
+.task3 div{
+    width: 400px;
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px auto;
+    /* shape 2 */
+    overflow: hidden;
+    white-space: nowrap;
+    /* shape 3 */
+    text-overflow: ellipsis;
+
+}
+.task4 {
+    background-color: #EFEFEF;
+    /* the next props to make the link in middle   */
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+.task4 a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px ;
+    color: #eee;
+    background-color: #009688;
+    border-bottom: 20px solid #00514A;
+}
