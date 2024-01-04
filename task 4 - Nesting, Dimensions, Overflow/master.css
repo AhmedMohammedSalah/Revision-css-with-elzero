@@ -1,0 +1,25 @@
+.task1 {
+    background-color: #EDEDED;
+}
+.task1 .parent .child span {
+    color: red;
+}
+.task1 .parent span {
+    color: blue;
+}
+.task1 .parent p ,.task1 .title{
+    color: green;
+}
+/* task 2  */
+.task2 {
+    background-color: #EFEFEF;
+}
+.task2 div{
+    background-color: rgb(136, 0, 0,0.8);
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    max-height: 20px;
+    max-width: 400px;
+}
