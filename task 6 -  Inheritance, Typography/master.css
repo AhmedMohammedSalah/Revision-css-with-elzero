@@ -1,0 +1,61 @@
+html{
+    font-size: 20px;
+}
+
+.task1{
+    background-color: rgb(104, 86, 65,0.3);
+}
+.task1 div{
+    padding: 40px;
+    font-size: 50px;
+    background-color: #EDEDED;
+    border: 5px orange solid;
+    margin: 5px;
+    text-align: center;
+    font-weight: 900;
+}
+.task1 div p {
+    border: inherit;
+    padding: inherit;
+}
+
+.task2 {
+    background-color: rgba(253, 199, 136, 0.3);
+    font-size: 80px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.task2 .p1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.task2 .p2 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+}
+
+.task2 .p3 {
+    font-family: 'Jomhuria', cursive;
+    font-weight: 400;
+}
+.task3 {
+    background-color: rgba(253, 199, 136, 0.3);
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.task3 .p1 {
+    font-size: 2.5rem;
+}
+
+.task3 .p2 {
+    font-size: 2rem;
+}
+
+.task3 .p3 {
+    font-size: 1.5rem;
+}
