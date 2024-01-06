@@ -1,0 +1,92 @@
+.task1 ,
+.task2 ,
+.task3 ,
+.task4{
+    background-color: cornsilk;
+    position: relative;
+}
+.task1 div{
+    margin: 30px auto;
+    background-color: #EDEDED;
+    text-align: center;
+    font-size: 50px;
+    width: 300px;
+    height: 60px;
+
+}
+.task1 div:empty {
+    background: red;
+}
+/*  */
+
+.task2 div {
+    background-color: #EDEDED;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
+    margin: 30px ;
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+.task2 div::first-letter {
+    display: inline-block;
+    content: "";
+    background-color: red;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    margin-top: -37px;
+}
+.task3 p,.task4 p{
+    margin: 10px auto;
+    background: #DEDEDE;
+    width: 700px;
+    padding: 20px;
+    font-size: 20px;
+    border-left:5px solid #E91E63 ;
+    position: relative;
+}
+.task3 p::before{
+    content: attr(data-person);
+    /* margin: 10px 20px; */
+    background: #DEDEDE;
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    /* border-left: 5px solid plum; */
+}
+.task3 p::after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent #E91E63 transparent transparent;
+    top: 35%;
+    left: -40px;
+    margin-top: -10px;
+}
+.task4 p {
+    border: none;
+    counter-increment: numbers-counters;
+    border-right:5px solid #F4493C;
+}
+.task4 p::before {
+    position: absolute;
+    background-color: #F4493C;
+    padding: 20px;
+    top: 0;
+    left: -50px;
+    color: white;
+    content: counter(numbers-counters);
+}
