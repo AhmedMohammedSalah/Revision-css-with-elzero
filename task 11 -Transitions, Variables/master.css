@@ -1,0 +1,101 @@
+body{
+    position: relative;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.task1,
+.task2,
+.task3 {
+    background-color: #c4ffc4;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: 540px;
+
+}
+.task1 div {
+    background-color: #DEDEDC;
+    margin: 20px;
+    padding: 15px;
+    transition: margin-top .5s ease .5s;
+    -webkit-transition: margin-top .5s ease .5s;
+    -moz-transition: margin-top .5s ease .5s;
+    -ms-transition: margin-top .5s ease .5s;
+    -o-transition: margin-top .5s ease .5s;
+    background-color: #F2F2F4;
+        padding: 20px;
+        width: 500px;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        transition: margin-top .5s ease;
+        -webkit-transition: margin-top .5s ease;
+        -moz-transition: margin-top .5s ease;
+        -ms-transition: margin-top .5s ease;
+        -o-transition: margin-top .5s ease;
+}
+.task1 div {
+        background-color: #DEDEDC;
+        margin: 20px;
+        padding: 15px;
+        transition: margin-top .5s ease .5s;
+        -webkit-transition: margin-top .5s ease .5s;
+        -moz-transition: margin-top .5s ease .5s;
+        -ms-transition: margin-top .5s ease .5s;
+        -o-transition: margin-top .5s ease .5s;
+}
+.task1:hover {
+    margin-top: 40px;
+}
+
+.task1:hover .two {
+    margin-top: 50px;
+}
+
+.task2 div{
+    color: #dfdfdf !important;
+    background-color: #dfdfdf !important;
+    border: none !important;
+    padding: 10px !important;
+    margin: 0px auto;
+    width: 400px;
+    font-size: 20px !important;
+    text-align: left;
+}
+.task2 div::after {
+    content: "Elzero";
+    position: absolute;
+    left: 40%;
+    top: 10px ;
+    color: #000;
+    font-size: 20px;
+}
+/* 
+/*  */
+/* */ 
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+
+.task3 div {
+    color: var(--mainColor, #ff0000);
+    border: 5px solid var(--mainColor, #000000);
+    padding: var(--mainPadding);
+    margin: 20px;
+    font-size: 30px;
+}
+
+.task3 div:nth-child(n+4) {
+    color: var(--mainColor000, #ff0000);
+    border: 5px solid var(--mainColor00, #000000);
+    padding: var(--mainPadding00, 10px);
+    margin: 20px;
+    font-size: 30px;
+}
