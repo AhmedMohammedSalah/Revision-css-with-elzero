@@ -14,14 +14,14 @@
     display: inline-block;
     margin: 20px;
     background:#fff;
-    border-radius: 50% ;
-    -webkit-border-radius: 50% ;
-    -moz-border-radius: 50% ;
-    -ms-border-radius: 50% ;
-    -o-border-radius: 50% ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     box-shadow:
-    10px 10px  5px  #04a3ff,
-    -10px -10px 5px #ff04d5;
+        10px 10px 5px #04a3ff,
+        -10px -10px 5px #ff04d5;
     counter-increment: counters;
 }
 .task1 div::after {
