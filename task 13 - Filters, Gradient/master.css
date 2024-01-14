@@ -1,0 +1,78 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.task1,
+.task2,
+.task3 {
+    background-color: #c4ffc4;
+}
+.task1 div::first-letter {
+    color: #c0392b !important;
+}
+
+.task1 div {
+    width: 600px;
+    display: block;
+    padding: 30px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    margin: 5px auto;
+    position: relative;
+    border-right: 8px solid #8e44ad;
+    border-left: 8px solid #f65846;
+}
+
+.task1 div::before,
+.task1 div::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: calc(100% + 16px);
+    background-image: linear-gradient(to right,
+            #f65846 20%,
+            #2795ae 20%,
+            #2795ae 40%,
+            #00d312 40%,
+            #00d312 60%,
+            #b40018 60%,
+            #b40018 80%,
+            #8e44ad 80%);
+}
+
+.task1 div::before {
+    top: -8px;
+    left: -8px;
+}
+
+.task1 div::after {
+    bottom: -8px;
+    left: -8px;
+}
+.task2 input{
+    display: block;
+    width: 600px;
+    margin: 10px auto;
+    border: none;
+    font-size: xx-large;
+    background-color: #ededed;
+    padding: 10px;
+    text-transform:capitalize ;
+    caret-color: red;
+}
+.task2 .input-container{
+    position: relative;
+}
+.task2 .input-container::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 45%;
+    bottom: -2px;
+    left: 372px;
+    background-image: linear-gradient(to right, #f65846 50%, #00d312 50%, #00d312);
+}

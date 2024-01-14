@@ -59,5 +59,23 @@
         [short]flex :<flex-grow> <flex-shrink> <flex-basis>
         [5]align-self:stretch <default>;
             [+] center          [+] flex-end        [+]flex-start
+---------------------------------------------
+8=>Gradient   
+    [1]syntax
+        [-]background-image:linear-gradient (Direction||Angle ,color stop1,color stop2 ,.......);
+        [Ex]background-image:linear-gradient (to top ,red,blue);
+        [Ex]background-image:linear-gradient (70 ,red,blue,green);
+        [Ex]background-image:linear-gradient (70 ,red 70%,blue 10%,green) ;
+        [Elzero-Ex]>background-image:linear-gradient (
+            to right ,
+            #2980b9 20%,
+            #27ae60 20%,
+            #27ae60 40%,
+            #d35400 40%,
+            #d35400 60%,
+            #8e44ad 60%,
+            #8e44ad 80%,
+            #c0392b 80%
+            );
         
 
