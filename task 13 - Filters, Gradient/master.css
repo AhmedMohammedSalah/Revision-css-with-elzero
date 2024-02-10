@@ -66,13 +66,17 @@
 }
 .task2 .input-container{
     position: relative;
+    width: 600px;
+    margin: 10px auto;
+    border: none;
+    background-color: #ededed;
 }
 .task2 .input-container::after {
     content: "";
     position: absolute;
     height: 5px;
-    width: 45%;
+    width: 100%;
     bottom: -2px;
-    left: 372px;
+    left: 0;
     background-image: linear-gradient(to right, #f65846 50%, #00d312 50%, #00d312);
 }

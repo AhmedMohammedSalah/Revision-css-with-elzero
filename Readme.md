@@ -77,5 +77,54 @@
             #8e44ad 80%,
             #c0392b 80%
             );
-        
-
+-----------------------     
+9=>caret-color: red;
+-----------------------     
+10=>pointer-events: none;
+------------------------
+11=>Grid system
+    [*]Parent props
+        [1]display:grid;
+        [2]grid-template-columns[numbers-of-columns-in]:
+            [+] 3px 3px 3px [px]          [+] 20% 20% 20% 
+            [+] auto auto auto            [+] repeat(3,100px)
+                    [1fr]fraction is look like auto but 
+                        [-]auto is shy [vs] refraction is greed
+        [3]grid-template-row[numbers-of-rows-in]:  
+            [+] 3px 3px 3px [px]          [+] 20% 20% 20% 
+            [+] auto auto auto            [+] repeat(3,100px)
+                    [1fr]fraction is look like auto but 
+                        [-]auto is shy [vs] refraction is greed
+        [4]gap:[row-gap] [column-gap]
+            [*]gap:10px 10px;
+        [5] justify-content:flex-start<default>;
+            [+] center          [+] flex-end
+            [+] space-between   [+] space-around
+                    [+] space-evenly
+        [6] align-content:stretch <default>;
+            [+] center          [+] flex-end         [+]flex-start
+            [+] space-between   [+] space-around    [+]space-evenly
+        [7]grid-template-areas:
+            "logo logo nav nav nav nav nav nav nav nav"
+            "cont cont cont cont cont cont cont side side side"
+            "foot foot foot foot foot foot foot foot foot foot";
+    [*]Child props
+        [0]grid-area:'logo';
+        [1]grid-column:1/5;
+            [-]grid-column:span 4 ;
+            [-]grid-column:span 4 ;
+            [-]grid-column:2 /span 3 ;
+        [2]grid-row:1/3;
+            [-]grid-row:span 1 ;
+            [-]grid-row:span 1 ;
+            [-]grid-row:2 /span 3 ;
+        [3]grid-area:
+            [grid-row-start]
+            [grid-column-start]
+            [grid-row-end]
+            [grid-col-end];
+                [-]grid-area: 1/2/2/5;
+        [4]auto-fil [responsive]
+        [5]minmax(min value,max value) [responsive]        
+---------------------------------
+ 

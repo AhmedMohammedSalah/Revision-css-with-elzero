@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.task1 div {
+    width: 300px;
+    height: 200px;
+    display: block;
+    padding: 30px;
+    background-color: #efefef;
+    display: flex;
+    color: #36c9eb;
+    font-size: 40px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.task1 div::after{
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color:#36c9eb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+}
+.task1 div::before {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #eb3660;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+.task2 div {
+    width: 200px;
+    height: 200px;
+    background-color: #EEEEEE;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+.task2 div::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-color: #E91E63 #E91E63 #E91E63 #fff;
+    border-style: solid;
+    border-width: 5px;
+    transition: .5s ease .5s;
+}
+.task2 div::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    top: -10px;
+    left: -10px;
+    z-index: -2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-color: #03A9F4 #fff #03A9F4 #03A9F4;
+    border-style: solid;
+    border-width: 10px;
+    transition: .5s ease .5s;
+}
+.task2 div:hover::after,
+.task2 div:hover::before {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
